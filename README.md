@@ -7,7 +7,7 @@ Synchronous Design: All state transitions are synchronized to a 50MHz system clo
 
 Hierarchical Structure: The design is modular, with a top-level entity connecting specialized components like a state machine, synchronizers, and input filters.
 
-State Machine Core: A robust, 16-state Moore FSM controls the entire traffic light sequence. The FSM is implemented using a standard three-process VHDL model for clarity and reliability.
+State Machine Core: A 16-state Moore FSM controls the entire traffic light sequence. The FSM is implemented using a standard three-process VHDL model for clarity and reliability.
 
 Pedestrian Crossing: Handles asynchronous pedestrian requests for both NS and EW directions. Inputs are debounced, synchronized, and latched until serviced by the FSM.
 
